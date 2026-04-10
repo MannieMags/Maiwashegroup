@@ -95,20 +95,18 @@ header {
 }
 
 .logo {
-  font-family: var(--heading-font);
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: #fff;
-  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
+}
+
+.logo img {
+  height: 48px;
+  width: auto;
 }
 
 .logo:hover {
   text-decoration: none;
-}
-
-.logo .accent {
-  color: var(--accent-color);
 }
 
 /* Desktop nav */
@@ -246,6 +244,12 @@ header {
   max-width: 640px;
 }
 
+.hero-logo {
+  height: 120px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
 .hero h1 {
   font-family: var(--heading-font);
   font-size: clamp(1.8rem, 5vw, 3rem);
@@ -283,6 +287,10 @@ header {
 
 .page-hero .hero-content {
   max-width: 100%;
+}
+
+.page-hero .hero-logo {
+  height: 100px;
 }
 
 .page-hero .hero-content h1 {
@@ -1391,8 +1399,8 @@ footer {
    SMALL MOBILE (≤ 380px)
    ═══════════════════════════════════════ */
 @media (max-width: 380px) {
-  .logo {
-    font-size: 1.15rem;
+  .logo img {
+    height: 38px;
   }
 
   .hero h1 {
